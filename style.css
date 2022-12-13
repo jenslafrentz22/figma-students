@@ -3,10 +3,14 @@
   --main-font: Montserrat;
   background-color: #e5e5e5;
   font-family: var(--main-font);
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 600px;
 }
 
 main {
-  box-sizing: border-box;
   width: 391px;
   margin: 0 auto;
   background-color: white;
@@ -17,71 +21,126 @@ section {
   padding: 10px;
 }
 
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+h2 {
+  font-size: 16px;
+  line-height: 18.85px;
+  color: #0006;
+}
+p {
+  margin: 0;
+}
+/* HEADER */
 header {
   background-color: #6a1cc3;
   color: white;
   display: grid;
   grid-template-columns: 20% 80%;
+  padding-top: 50px;
   border-bottom: 5px solid var(--main-color);
 }
-h1 {
-  font-size: 18px;
+
+.headerspitze {
+  height: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-p {
+.headerspitzelinks {
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 0 195px;
+  border-color: var(--main-color) var(--main-color) transparent transparent;
 }
-/* HEADER */
-#checkbox {
+.headerspitzerechts {
+  border-style: solid;
+  border-width: 10px 195px 0 0;
+  border-color: var(--main-color) transparent transparent var(--main-color);
+}
+
+/* checkboxbutton */
+#checkboxbutton {
   display: none;
   font-size: 0;
 }
 
-#checkbox + label {
-  background-color: salmon;
+#checkboxbutton + label {
+  _background-color: salmon;
 }
 
-#checkbox:focus {
+#checkboxbutton:focus {
   background-color: dodgerblue;
+}
+
+.checkboxdiv {
+  background-color: white;
+  width: 32px;
+  height: 2px;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
+
+/* searchstudents */
+
+#searchstudents {
+  position: relative;
+  width: fit-content;
+  font-size: 1rem;
+  padding-inline: 0.75rem 2.5rem;
+  padding-block: 0.25rem;
+  border: 2px solid var(--main-color);
+  color: lightgray;
+}
+
+#searchstudents:focus + label {
+}
+
+.labelsearchstudents {
+  color: var(--main-color);
+  position: absolute;
+  left: 0px;
 }
 
 svg {
   width: 32px;
   height: 24px;
 }
-.form1 {
-  width: fit-content;
-
-  position: relative;
-}
-
-#searchstudents {
-  position: relative;
-  font-size: 1rem;
-  padding-block: 0.25rem;
-  padding-inline: 0.75rem 2.5rem;
-  border: 2px solid var(--main-color);
-}
-
-#searchstudents:focus + label {
-  background-color: -webkit-focus-ring-color;
-}
-
-.label1 {
-  color: var(--main-color);
-  position: absolute;
-  right: 0;
-  height: 100%; /* ODER: top: 0; bottom: 0; */
-  aspect-ratio: 1.25 / 1;
-  border-radius: 20px;
-}
 
 /* FORMULAR - DROPDOWN */
-select {
-  background-color: var(--main-color);
-  background-position: 0px 50px;
+#dropclass,
+#droptime {
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
+  font-weight: bold;
 }
 
 /* DIVS */
 .students {
-  color: var(--main-color);
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
   border: 2px solid var(--main-color);
+  margin: 10px 0 10px 0;
+  box-shadow: 2px 2px var(--main-color);
+  color: var(--main-color);
+  padding: 10px;
+}
+
+.students a {
+  color: var(--main-color);
+  font-size: 12px;
+}
+.studentsimage {
+  background-color: var(--main-color);
+  color: white;
+  width: fit-content;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.studentsimage svg {
+  max-width: 20px;
 }

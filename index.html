@@ -17,13 +17,16 @@
     <main>
         <header>
             <div>
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label for="checkbox">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <input type="checkbox" name="checkboxbutton" id="checkboxbutton">
+                <label for="checkboxbutton">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
+                    </svg> -->
+                    <div class="checkboxdiv"></div>
+                    <div class="checkboxdiv"></div>
+                    <div class="checkboxdiv"></div>
                 </label>
             </div>
             <div>
@@ -31,48 +34,97 @@
             </div>
 
         </header>
+        <div class="headerspitze">
+            <div class="headerspitzelinks"></div>
+            <div class="headerspitzerechts"></div>
+        </div>
         <section>
-            <h1>STUDENTS</h1>
+            <h1>students</h1>
             <p>Your fellow students</p>
-            <form class="form1">
-                <input type="text" name="searchstudents" id="searchstudents">
-                <label for="searchstudents" class="label1">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search"
-                        viewBox="0 0 16 16">
+            <input type="text" name="searchstudents" id="searchstudents" value="Search for student names">
+            <label for="searchstudents" class="labelsearchstudents">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+
+            </label>
+
+
+            <select name="dropclass" id="dropclass">
+                <option value="NovemberClass 2021">NovemberClass 2021</option>
+            </select>
+
+            <select name="droptime" id="droptime">
+                <option value="Full-time" class="white">Full-time</option>
+            </select>
+
+            <h2>Full-time November Class of 2021</h2>
+            <div class="students">
+                <div class="studentsimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
                         <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
                     </svg>
-                </label>
-            </form>
-            <form class="form2">
-                <select name="dropclass" id="dropclass">
-                    <option value="NovemberClass 2021">NovemberClass 2021</option>
-                </select>
+                </div>
+                <div class="studentscontent">
+                    <p>Dmitry Kolesnikov</p>
+                    <a href="#">github.com/Dimi87</a>
+                </div>
+            </div>
+            <div class="students">
 
-                <select name="droptime" id="droptime">
-                    <option value="Full-time">Full-time</option>
-                </select>
-            </form>
-
-            <div class="students">
-                <p>Dmitry Kolesnikov</p>
-                <a href="#">github.com/Dimi87</a>
+                <div class="studentsimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="studentscontent">
+                    <p>Justus Siebert</p>
+                    <a href="#">github.com/justussiebert</a>
+                </div>
             </div>
             <div class="students">
-                <p>Justus Siebert</p>
-                <a href="#">github.com/justussiebert</a>
+                <div class="studentsimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="studentscontent">
+                    <p>Manuel Hohenadl</p>
+                    <a href="#">github.com/Manoo89</a>
+                </div>
             </div>
             <div class="students">
-                <p>Manuel Hohenadl</p>
-                <a href="#">github.com/Manoo89</a>
+                <div class="studentsimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="studentscontent">
+                    <p>Ovidiu Goanta</p>
+                    <a href="#">github.com/Goanta-Ovidiu</a>
+                </div>
             </div>
             <div class="students">
-                <p>Ovidiu Goanta</p>
-                <a href="#">github.com/Goanta-Ovidiu</a>
-            </div>
-            <div class="students">
-                <p>Patricia Prager</p>
-                <a href="#">github.com/patprager</a>
+                <div class="studentsimage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                    </svg>
+                </div>
+                <div class="studentscontent">
+                    <p>Patricia Prager</p>
+                    <a href="#">github.com/patprager</a>
+                </div>
             </div>
         </section>
     </main>
